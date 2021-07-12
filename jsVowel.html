@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script src="C:\work\NavTech CIT\HTMLTutorial\js\jquery.min.js"></script>
+	<script type="text/javascript"> 
+		
+		$(document).ready(function() {
+			$("#lbl1").hide();
+			let btn = $("#btnCheck");			
+			btn.click(function(){
+				let char = $("#charInput").val();
+				
+				if(char=="a" || char=="e" ||char=="i" ){
+					$("#lbl1").text("vowel").show();
+				}else {
+					$("#lbl1").text("consonent").show();
+				}
+			});
+		} );
+		
+		
+	</script>
+	
+	
+</head>
+<body>
+	<input type="text" id="charInput" placeholder="input a character" /> 
+	<br> <br>
+	<input type="button" id="btnCheck" value="Check Character"/>
+	<br> <br>
+	<label id="lbl1" for="char" > char is </label>
+</body>	
+
+
+
+</html>
